@@ -9,7 +9,7 @@ Citizen.CreateThread(function()
 		if NetworkIsSessionStarted() then
 			TriggerEvent("chat:addSuggestion", "/extra", "/extra Extra#:all true:false")
 			TriggerEvent("chat:addSuggestion", "/livery", "/livery livery#")
-      TriggerEvent("chat:addSuggestion", "/engine", "/engine (Toggles Engine)")
+      			TriggerEvent("chat:addSuggestion", "/engine", "/engine (Toggles Engine)")
 			TriggerEvent("chat:addSuggestion", "/trunk", "/trunk (Toggles Trunk)")
 			TriggerEvent("chat:addSuggestion", "/hood", "/hood (Toggles hood)")
 			TriggerEvent("chat:addSuggestion", "/fwindow", "/fwindow (Toggles Front Windows)")
@@ -46,7 +46,6 @@ RegisterCommand('extra', function(source, args)
                 else
                     Citizen.InvokeNative(0x7EE3A3C5E4A40CC9, Veh, extra, false)
                 end
-                
             end
         end
     end
